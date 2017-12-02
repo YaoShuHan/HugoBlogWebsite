@@ -1,0 +1,36 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Shuhan_Yao.Blog"
+
+theme = "hugo-future-imperfect"
+
+[[menu.main]]
+    name    = "首页"
+    weight  = 1
+    identifier = "fa fa-id-card-o"
+    url     = "/"
+
+[[menu.main]]
+    name    = "博客"
+    weight  = 2
+    identifier = "fa fa-newspaper-o"
+    url     = "/blog/"
+
+[[menu.main]]
+    name    = "摄影"
+    weight  = 3
+    identifier  = "fa fa-image-o"
+    url     = "/photo/"
+
+[params.intro]
+    header      = "Shuhan_Yao"
+    paragraph   = "~Winner Winner Chicken Dinner~"
+
+[params.intro.pic]
+    src     = "/img/avatar.png"
+    #set Image to be a circle
+    circle  = false
+    #set Image to be hexagon
+    imperfect = true
+    width   = ""
+
