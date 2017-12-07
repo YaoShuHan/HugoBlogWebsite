@@ -1,0 +1,42 @@
++++
+title = "更新OSX的Ruby版本"
+date = 2017-09-09T11:22:16+08:00
+categories = ["Development", "GoLang"]
+trags = ["Development", "OSX"]
+type = "post"
++++
+
+在使用Homebrew安装工具时，返回了Ruby版本过低的RuntimeError。OSX是系统自带Ruby的，可以通过RVM(Ruby Version Manager)对其进行更新，RVM包含了Ruby的版本管理和Gem库管理(Gemset)。
+
+## 安装RVM
+
+1.下载安装RVM
+
+    $ curl -L get.rvm.io | bash -s stable
+
+2.更新配置文件
+
+    $ source ~/.bashrc
+    $ source ~/.bash_profile
+
+3.验证是否安装成功
+
+    $ rvm -v
+
+## 使用RVM升级Ruby
+
+1.列出已知Ruby版本
+
+    $ rvm list
+
+2.安装所需版本
+
+    $ rvm install 2.3.4
+
+3.如果bash一片绿油油即成功，失败时执行
+
+    $ rvm reinstall 2.3.4
+
+## 问题汇总
+
+
